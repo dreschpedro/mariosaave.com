@@ -3,7 +3,10 @@ name: Deploy to Production
 on:
   push:
     branches:
-      - main  # Se ejecuta cuando hay un push en 'main'
+      - main
+
+permissions:
+  contents: write  # <--- Permiso para escribir contenido en el repo
 
 jobs:
   deploy:
