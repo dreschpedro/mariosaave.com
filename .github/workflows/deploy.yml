@@ -72,6 +72,5 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          # Donde se va a subir en Hostinger
+          local-dir: ./            # <-- Sube la raíz (que contiene el build)
           server-dir: /public_html/prueba/
